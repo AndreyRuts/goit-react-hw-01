@@ -1,0 +1,25 @@
+.table {
+  padding-top: 30px;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #b9b9b9;
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #252525;
+  color: white;
+}
+.transType {
+  text-align: center left;
+}
