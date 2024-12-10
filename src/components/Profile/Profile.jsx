@@ -1,28 +1,30 @@
-const Profile = ({name, tag, location, image, stats}) => {   
+import profileStyle from './Profile.module.css'
+
+const Profile = ({ name, tag, location, image, stats }) => {   
     return (
         <>
-            <div>
-                <div>
-                    <img
+            <div className={profileStyle.profile}>
+                <div className={profileStyle.top}>
+                    <img className={profileStyle.image}
                     src={image}
                     alt="User avatar"
                     />
-                    <p>{name}</p>
-                    <p>@{tag}</p>
-                    <p>{location}</p>
+                    <p className={profileStyle.title}>{name}</p>
+                    <p className={profileStyle.topText}>@{tag}</p>
+                    <p className={profileStyle.topText}>{location}</p>
                 </div>
-                <ul>
-                    <li>
-                        <span>Followers</span>
-                        <span>{stats.followers}</span>
+                <ul className={profileStyle.bottom}>
+                    <li className={profileStyle.statsBlock}>
+                        <span className={profileStyle.statsText}>Followers</span>
+                        <span className={profileStyle.statsTextBold}>{stats.followers}</span>
                     </li>
-                    <li>
-                        <span>Views</span>
-                        <span>{stats.views}</span>
+                    <li className={profileStyle.statsBlock}>
+                        <span className={profileStyle.statsText}>Views</span>
+                        <span className={profileStyle.statsTextBold}>{stats.views}</span>
                     </li>
-                    <li>
-                        <span>Likes</span>
-                        <span>{stats.likes}</span>
+                    <li className={profileStyle.statsBlock}>
+                        <span className={profileStyle.statsText}>Likes</span>
+                        <span className={profileStyle.statsTextBold}>{stats.likes}</span>
                     </li>
                 </ul>
             </div>

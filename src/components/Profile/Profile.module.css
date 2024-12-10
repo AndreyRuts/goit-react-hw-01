@@ -1,0 +1,51 @@
+.profile{
+    width: 600px;
+    height: 700px;
+    margin: 0 auto;
+    border: 3px black solid;
+    border-radius: 14px;
+}
+.top{
+    padding-top: 30px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.image{
+    width: 300px;
+    border-radius: 100%;
+    background-color: rgb(22, 21, 21);
+}
+.title{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 40px;
+}
+.topText{
+    font-size: 30px;
+    color: rgb(97, 94, 94);
+}
+.bottom{
+    padding-left: 0;
+    height: 132px;
+    justify-content: space-around;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    background-color: rgb(172, 172, 172);
+    border-radius: 0 0 14px 14px;
+}
+.statsBlock{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 3px rgb(109, 109, 109) solid;
+    border-radius: 0 0 14px 14px;
+}
+.statsText{
+    font-size: 30px;
+}
+.statsTextBold{
+    font-weight: 700;
+    font-size: 30px;
+}
