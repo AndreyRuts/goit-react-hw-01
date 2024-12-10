@@ -14,15 +14,15 @@ const Profile = ({ name, tag, location, image, stats }) => {
                     <p className={profileStyle.topText}>{location}</p>
                 </div>
                 <ul className={profileStyle.bottom}>
-                    <li className={profileStyle.statsBlock}>
+                    <li className={profileStyle.statsBlock1}>
                         <span className={profileStyle.statsText}>Followers</span>
                         <span className={profileStyle.statsTextBold}>{stats.followers}</span>
                     </li>
-                    <li className={profileStyle.statsBlock}>
+                    <li className={profileStyle.statsBlock2}>
                         <span className={profileStyle.statsText}>Views</span>
                         <span className={profileStyle.statsTextBold}>{stats.views}</span>
                     </li>
-                    <li className={profileStyle.statsBlock}>
+                    <li className={profileStyle.statsBlock3}>
                         <span className={profileStyle.statsText}>Likes</span>
                         <span className={profileStyle.statsTextBold}>{stats.likes}</span>
                     </li>
